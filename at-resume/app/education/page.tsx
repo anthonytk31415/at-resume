@@ -28,7 +28,7 @@ export default function EducationPage(): JSX.Element {
         <section key={"EducationPage"}>
             <PageHeaderH1 header={"Education"}/>
             <PanelLargeContainer>
-                <GroupHeaderWithImage imgSrc={null} header={"Universities"} />
+                <GroupHeaderWithImage imgSrc={""} header={"Universities"} />
                 <div className = "tracking-tighter ">
                     {collegeBlockInput.map((item, index) => (
                         <div key={index}>
@@ -39,7 +39,7 @@ export default function EducationPage(): JSX.Element {
                 
                 <PanelDivider/> 
 
-                <GroupHeaderWithImage imgSrc={null} header={"Certifications and Coursework"} />
+                <GroupHeaderWithImage imgSrc={""} header={"Certifications and Coursework"} />
                 <div className = "tracking-tighter ">
                     {certsBlockInput.map((item, index) => (
                         <div key={index}>

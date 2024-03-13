@@ -20,7 +20,7 @@ export function FormattedLogo({src}: {src: string}): JSX.Element{
 export function GroupHeaderWithImage({imgSrc, header}: {imgSrc: string, header: string}): JSX.Element{
     return (
         <div className={"flex flex-row items-center mt-3 mb-2" }> 
-            {imgSrc && <Image src={imgSrc} alt="" fill={true} width={40} className = "flex relative mr-1 ml-1" />}
+            {imgSrc!="" && <Image src={imgSrc} alt="" fill={true} width={40} className = "flex relative mr-1 ml-1" />}
             <h3 className={"font-medium text-xl "}> {header}</h3>
         </div>
     )
