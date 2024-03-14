@@ -3,10 +3,11 @@ import { Suspense } from 'react';
 // import ViewCounter from './view-counter';
 // import { getViewsCount } from 'app/db/queries';
 // import { getBlogPosts } from 'app/db/blog';
-import {formatDate} from './[slug]/page'
+
 // import { PageHeaderH1 } from 'app/components/containers/panelContainer';
 import { getBlogPosts } from '../db/blog';
 import { PageHeaderH1 } from '../components/containers/panelContainer';
+import { formatDate } from '../components/formatDate';
 export const metadata = {
   title: 'Blog',
   description: 'Read my thoughts on software development, design, and more.',
