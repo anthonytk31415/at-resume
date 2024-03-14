@@ -8,19 +8,16 @@ export function PageHeaderH1({header}: {header: string}): JSX.Element{
 }
 
 
-
 export function FormattedLogo({src}: {src: string}): JSX.Element{
     return (
-        <div> 
-            <Image src={src} alt="" fill={true} height={40} className = "flex relative mr-1 ml-1"/>
-        </div>
+        <img src={src} alt="" style={{ width: 'auto', height: '40px'}} className = "flex relative mr-1 ml-1" />
     )
 }
 
 export function GroupHeaderWithImage({imgSrc, header}: {imgSrc: string, header: string}): JSX.Element{
     return (
         <div className={"flex flex-row items-center mt-3 mb-2" }> 
-            {imgSrc!="" && <Image src={imgSrc} alt="" fill={true} width={40} className = "flex relative mr-1 ml-1" />}
+            {imgSrc!="" && <img src={imgSrc} alt="" style={{ width: '40px', height: 'auto'}} className = "flex relative mr-1 ml-1" />}
             <h3 className={"font-medium text-xl "}> {header}</h3>
         </div>
     )
